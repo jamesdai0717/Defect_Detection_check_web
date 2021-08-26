@@ -4,7 +4,7 @@
 1. Consider interactions to let the value of certain variables compare in the same specifications.
 2. Use the self-paced ensemble method to deal with the imbalanced data.
 3. Choose the best model parameters and threshold at which the TPR is as large as possible conditional on TNR equals to 1 by training the model by both Balanced Random Forest and LightGBM.
-4. Evaluating the model by testing data.(TNR=1,TPR=0.717,AUC=0.95)
+4. Evaluating the model by testing data. (TNR=1,TPR=0.717,AUC=0.95)
 
 ## check_web
 1. Collect the results in detect model and show the products that predicted NG in model since those products need to be confirm again.
