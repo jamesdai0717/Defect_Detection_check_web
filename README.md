@@ -15,7 +15,7 @@
 ### Home Page
 * Go to Login Page by clicking the Get started button!
 
-![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/images/home_page.PNG?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/home_page.PNG?raw=true)
 ### Login Page
 * Log in to go to Check Page!
 * Click the Register button if you dont have the account!
