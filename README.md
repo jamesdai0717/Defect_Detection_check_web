@@ -15,17 +15,17 @@
 ### Home Page
 * Go to Login Page by clicking the Get started button!
 
-![alt text](https://github.com/jamesdai0717/defect_detection/images/home_page.PNG?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/images/home_page.PNG?raw=true)
 ### Login Page
 * Log in to go to Check Page!
 * Click the Register button if you dont have the account!
 
-![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/login_page.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/login_page.png?raw=true)
 ### Check Page
-![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/check_page.PNG?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/check_page.PNG?raw=true)
 ### Confirm OK Page
-![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/confirmok.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/confirmok.png?raw=true)
 ### Confirm NG Page
-![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/logout_page.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/logout_page.png?raw=true)
 ### Search Page
-![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/search1.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/search1.png?raw=true)
