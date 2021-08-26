@@ -1,5 +1,5 @@
 # defect_detection
-*This project contains two parts. One is detect model; The Other is check web.
+* This project contains two parts. One is detect model; The Other is check web.
 ## detect_model
 1. Consider interactions to let the value of certain variables compare in the same specifications.
 2. Use the self-paced ensemble method to deal with the imbalanced data.
