@@ -6,24 +6,23 @@ import model_function
 
 ##train
 
-#dir = "/root/QMSAS_dir/detect_model2/"
-dir = "C:/Users/jamesdai/Desktop/james/0802/detect_model2/"
+dir = "/root/QMSAS_dir/detect_model2/"
 
-# train_1 = clean_function.read_data(dir=dir,name='df_train_no_makeup0_20201215_20210530_mes_1420_14_dup.csv',drop_dup=False)
-# train_2 = clean_function.read_data2(dir=dir,name='df_train_no_makeup0_20210602_20210620_mes_1420_14_dup.csv',drop_dup=False)
-# train_data = pd.concat([train_1,train_2],axis = 0)
-#
-# X_TRAIN_A, Y_TRAIN_A = clean_function.clean(train_data,'A',True)#(5107, 812)
-# X_TRAIN_A, Y_TRAIN_A = clean_function.select_imp(X_TRAIN_A,Y_TRAIN_A,True)
-#
-# pd.DataFrame(X_TRAIN_A).to_csv(dir + "result/X_TRAIN_A.csv",encoding='utf_8_sig')
-# pd.DataFrame(Y_TRAIN_A).to_csv(dir + "result/Y_TRAIN_A.csv",encoding='utf_8_sig')
-#
-# X_TRAIN_B, Y_TRAIN_B = clean_function.clean(train_data,'B',True)
-# X_TRAIN_B, Y_TRAIN_B = clean_function.select_imp(X_TRAIN_B,Y_TRAIN_B,True)
-#
-# pd.DataFrame(X_TRAIN_B).to_csv(dir + "result/X_TRAIN_B.csv",encoding='utf_8_sig')
-# pd.DataFrame(Y_TRAIN_B).to_csv(dir + "result/Y_TRAIN_B.csv",encoding='utf_8_sig')
+train_1 = clean_function.read_data(dir=dir,name='df_train_no_makeup0_20201215_20210530_mes_1420_14_dup.csv',drop_dup=False)
+train_2 = clean_function.read_data2(dir=dir,name='df_train_no_makeup0_20210602_20210620_mes_1420_14_dup.csv',drop_dup=False)
+train_data = pd.concat([train_1,train_2],axis = 0)
+
+X_TRAIN_A, Y_TRAIN_A = clean_function.clean(train_data,'A',True)#(5107, 812)
+X_TRAIN_A, Y_TRAIN_A = clean_function.select_imp(X_TRAIN_A,Y_TRAIN_A,True)
+
+pd.DataFrame(X_TRAIN_A).to_csv(dir + "result/X_TRAIN_A.csv",encoding='utf_8_sig')
+pd.DataFrame(Y_TRAIN_A).to_csv(dir + "result/Y_TRAIN_A.csv",encoding='utf_8_sig')
+
+X_TRAIN_B, Y_TRAIN_B = clean_function.clean(train_data,'B',True)
+X_TRAIN_B, Y_TRAIN_B = clean_function.select_imp(X_TRAIN_B,Y_TRAIN_B,True)
+
+pd.DataFrame(X_TRAIN_B).to_csv(dir + "result/X_TRAIN_B.csv",encoding='utf_8_sig')
+pd.DataFrame(Y_TRAIN_B).to_csv(dir + "result/Y_TRAIN_B.csv",encoding='utf_8_sig')
 
 ##test
 
@@ -48,22 +47,22 @@ Y_TRAIN_A = pd.read_csv(dir + "result/Y_TRAIN_A.csv", index_col='ZORDNO_1320')
 
 X_TRAIN_B = pd.read_csv(dir + "result/X_TRAIN_B.csv", index_col='ZORDNO_1320')
 Y_TRAIN_B = pd.read_csv(dir + "result/Y_TRAIN_B.csv", index_col='ZORDNO_1320')
-#
-# param_brf,param_lgbm = model_function.tune_param(X_TRAIN_A.values, Y_TRAIN_A.values.ravel())
-#
-# param_brf_a = pd.DataFrame(param_brf,index=[0])
-# param_lgbm_a = pd.DataFrame(param_lgbm,index=[0])
-#
-# pd.DataFrame(param_brf_a).to_csv(dir + "result/PARAM_BRF_A.csv",encoding='utf_8_sig')
-# pd.DataFrame(param_lgbm_a).to_csv(dir + "result/PARAM_LGBM_A.csv",encoding='utf_8_sig')
-#
-# param_brf,param_lgbm = model_function.tune_param(X_TRAIN_B.values, Y_TRAIN_B.values.ravel())
-#
-# param_brf_b = pd.DataFrame(param_brf,index=[0])
-# param_lgbm_b = pd.DataFrame(param_lgbm,index=[0])
-#
-# pd.DataFrame(param_brf_b).to_csv(dir + "result/PARAM_BRF_B.csv",encoding='utf_8_sig')
-# pd.DataFrame(param_lgbm_b).to_csv(dir + "result/PARAM_LGBM_B.csv",encoding='utf_8_sig')
+
+param_brf,param_lgbm = model_function.tune_param(X_TRAIN_A.values, Y_TRAIN_A.values.ravel())
+
+param_brf_a = pd.DataFrame(param_brf,index=[0])
+param_lgbm_a = pd.DataFrame(param_lgbm,index=[0])
+
+pd.DataFrame(param_brf_a).to_csv(dir + "result/PARAM_BRF_A.csv",encoding='utf_8_sig')
+pd.DataFrame(param_lgbm_a).to_csv(dir + "result/PARAM_LGBM_A.csv",encoding='utf_8_sig')
+
+param_brf,param_lgbm = model_function.tune_param(X_TRAIN_B.values, Y_TRAIN_B.values.ravel())
+
+param_brf_b = pd.DataFrame(param_brf,index=[0])
+param_lgbm_b = pd.DataFrame(param_lgbm,index=[0])
+
+pd.DataFrame(param_brf_b).to_csv(dir + "result/PARAM_BRF_B.csv",encoding='utf_8_sig')
+pd.DataFrame(param_lgbm_b).to_csv(dir + "result/PARAM_LGBM_B.csv",encoding='utf_8_sig')
 
 #choose the best method & data and predict
 
