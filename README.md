@@ -20,12 +20,12 @@
 * Log in to go to Check Page!
 * Click the Register button if you dont have the account!
 
-![alt text](https://github.com/jamesdai0717/defect_detection/images/login_page.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/login_page.png?raw=true)
 ### Check Page
-![alt text](https://github.com/jamesdai0717/defect_detection/images/check_page.PNG?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/check_page.PNG?raw=true)
 ### Confirm OK Page
-![alt text](https://github.com/jamesdai0717/defect_detection/images/confirmok.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/confirmok.png?raw=true)
 ### Confirm NG Page
-![alt text](https://github.com/jamesdai0717/defect_detection/images/logout_page.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/logout_page.png?raw=true)
 ### Search Page
-![alt text](https://github.com/jamesdai0717/defect_detection/images/search1.png?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/check_web/images/search1.png?raw=true)
