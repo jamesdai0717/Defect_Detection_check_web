@@ -8,7 +8,7 @@
 
 ## check_web
 1. Collect the results in detect model and show the products that predicted NG in model since those products need to be confirm again.
-2. Therefore, this web is to let user to be convenient to confirm the products and also renew directly the data in mongodb.
+2. In order to let user to be convenient to confirm the products and also renew directly the data in mongodb.
 3. This web enable users to login, logout, register and search for their interesting product.
 
 ### Display
