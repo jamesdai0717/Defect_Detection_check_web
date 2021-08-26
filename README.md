@@ -15,13 +15,17 @@
 ### Home Page
 * Go to Login Page by clicking the Get started button!
 
-![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG?raw=true)
-### Teams Page
-* Go to Official Web by clicking the official web link!
-* Go to Lioneers Players Data Page by clicking the GO button!
+![alt text](https://github.com/jamesdai0717/defect_detection/images/home_page.PNG?raw=true)
+### Login Page
+* Log in to go to Check Page!
+* Click the Register button if you dont have the account!
 
-![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/team_page.PNG?raw=true)
-### Official Web
-![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion_official.PNG?raw=true)
-### Lioneers Players Data Page
-![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion.PNG?raw=true)
+![alt text](https://github.com/jamesdai0717/defect_detection/images/login_page.png?raw=true)
+### Check Page
+![alt text](https://github.com/jamesdai0717/defect_detection/images/check_page.PNG?raw=true)
+### Confirm OK Page
+![alt text](https://github.com/jamesdai0717/defect_detection/images/confirmok.png?raw=true)
+### Confirm NG Page
+![alt text](https://github.com/jamesdai0717/defect_detection/images/logout_page.png?raw=true)
+### Search Page
+![alt text](https://github.com/jamesdai0717/defect_detection/images/search1.png?raw=true)
