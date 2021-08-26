@@ -10,3 +10,18 @@
 1. Collect the results in detect model and show the products that predicted NG in model since those products need to be confirm again.
 2. Therefore, this web is to let user to be convenient to confirm the products and also renew directly the data in mongodb.
 3. This web enable users to login, logout, register and search for their interesting product.
+
+### Display
+### Home Page
+* Go to Login Page by clicking the Get started button!
+
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG?raw=true)
+### Teams Page
+* Go to Official Web by clicking the official web link!
+* Go to Lioneers Players Data Page by clicking the GO button!
+
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/team_page.PNG?raw=true)
+### Official Web
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion_official.PNG?raw=true)
+### Lioneers Players Data Page
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion.PNG?raw=true)
