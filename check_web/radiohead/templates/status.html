@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %}
+Check Page
+{% endblock %}
+{% block content %}
+<form action="/status" method="post">
+  <div class="row" style="margin-top:20px; margin-left:20px">
+    <div class="col">
+      <br>
+      <div class="row">
+        <form method="POST" action="{{url_for('status_page')}}">
+          <div class="col-8">
+            <input type="text" class="form-control" name="id" id="id" placeholder="ZORDNO_1320">
+          </div>
+          <script>
+            function CLEAR() {
+              $("#id").val('')
+            }
+          </script>
+          <div class="col">
+            <button type="submit" class="btn btn-primary">SEARCH </button>
+            <input type="submit" class="btn btn-info" onclick="CLEAR()" value=" ALL "></input>
+          </div>
+        </form>
+      </div>
+      <br>
+      <h2 style="color:white">Predict NG</h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <!-- Your Columns HERE -->
+            <th scope="col">ZORDNO_1320</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in predict_ng %}
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <hr style="height:40pt; visibility:hidden;" />
+      <h2 style="color:white">Predict OK</h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ZORDNO_1320</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in predict_ok %}
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <hr style="height:40pt; visibility:hidden;" />
+      <h2 style="color:white">Missing Data</h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ZORDNO_1320</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in missing %}
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</form>
+{% endblock %}

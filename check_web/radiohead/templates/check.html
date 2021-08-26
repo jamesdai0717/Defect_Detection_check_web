@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block title %}
+Check Page
+{% endblock %}
+{% block content %}
+<form action="/check" method="post">
+  <div class="row" style="margin-top:20px; margin-left:20px">
+    <div class="col-5">
+      <br>
+      <div class="row">
+        <form method="POST" action="{{url_for('check_page')}}">
+          <div class="col-8">
+            <input type="text" class="form-control" name="id" id="id" placeholder="ZORDNO_1320">
+          </div>
+          <script>
+            function CLEAR() {
+              $("#id").val('')
+            }
+          </script>
+          <div class="col">
+            <button type="submit" class="btn btn-primary">SEARCH </button>
+            <input type="submit" class="btn btn-info" onclick="CLEAR()" value=" ALL "></input>
+          </div>
+        </form>
+      </div>
+      <br>
+      <input type="hidden" name="ZORDNO_1320" id="ZORDNO_1320"></input>
+      <input type="hidden" name="REAL_RESULT" id="REAL_RESULT"></input>
+      <h2 style="color:white">Check the defects</h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <!-- Your Columns HERE -->
+            <th scope="col">ZORDNO_1320</th>
+            <th scope="col">RISK</th>
+            <th scope="col">CONFIRM</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in products %} <script>
+            function bind(ZORDNO_1320, result) {
+              $("#ZORDNO_1320").val(ZORDNO_1320)
+              $("#REAL_RESULT").val(result)
+            }
+          </script>
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+            <td>{{ product.PROB }}</td>
+            <td>
+              <input type="submit" class="btn btn-outline btn-success" onclick="bind({{product.ZORDNO_1320}},0)" value="    OK    "></input>
+              <input type="submit" class="btn btn-outline btn-danger" onclick="bind({{product.ZORDNO_1320}},1)" value="    NG    "></input>
+            </td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-3">
+      <hr style="height:40pt; visibility:hidden;" />
+      <h2 style="color:white">Confirm OK</h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ZORDNO_1320</th>
+            <th scope="col">RISK</th>
+            <th scope="col">OPTION</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in okproducts %} <script>
+            function bind2(ZORDNO_1320) {
+              $("#ZORDNO_1320").val(ZORDNO_1320)
+              $("#REAL_RESULT").val(' ')
+            }
+          </script>
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+            <td>{{ product.PROB }}</td>
+            <td>
+              <input type="submit" class="btn btn-warning" onclick="bind2({{product.ZORDNO_1320}})" value="UNDO"></input>
+            </td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-3">
+      <hr style="height:40pt; visibility:hidden;" />
+      <h2 style="color:white">Confirm NG </h2>
+      <br>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ZORDNO_1320</th>
+            <th scope="col">RISK</th>
+            <th scope="col">OPTION</th>
+          </tr>
+        </thead>
+        <tbody> {% for product in ngproducts %} <script>
+            function bind2(ZORDNO_1320) {
+              $("#ZORDNO_1320").val(ZORDNO_1320)
+              $("#REAL_RESULT").val(' ')
+            }
+          </script>
+          <tr>
+            <td>{{ product.ZORDNO_1320 }}</td>
+            <td>{{ product.PROB }}</td>
+            <td>
+              <input type="submit" class="btn btn-warning" onclick="bind2({{product.ZORDNO_1320}})" value="UNDO"></input>
+            </td>
+          </tr> {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</form>
+{% endblock %}
