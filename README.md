@@ -28,6 +28,7 @@
 ### Check Page
 * Click OK button if you confirm this product OK!
 * Click NG button if you confirm this product NG!
+![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/confirmok.png?raw=true)
 ![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/check_page.PNG?raw=true)
 
 ### Confirm OK Page
