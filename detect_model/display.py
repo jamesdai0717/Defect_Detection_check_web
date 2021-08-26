@@ -39,9 +39,9 @@ X_TEST_B, Y_TEST_B = clean_function.select_imp(X_TEST_B,Y_TEST_B,False)
 
 pd.DataFrame(X_TEST_B).to_csv(dir + "result/X_TEST_B.csv",encoding='utf_8_sig')
 pd.DataFrame(Y_TEST_B).to_csv(dir + "result/Y_TEST_B.csv",encoding='utf_8_sig')
-#
+
 # tune parameter
-#
+
 X_TRAIN_A = pd.read_csv(dir + "result/X_TRAIN_A.csv", index_col='ZORDNO_1320')
 Y_TRAIN_A = pd.read_csv(dir + "result/Y_TRAIN_A.csv", index_col='ZORDNO_1320')
 
