@@ -34,6 +34,6 @@
 * Click 'UNDO' button to undo your move!
 ![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/logout_page.png?raw=true)
 ### Search Page
-* Search the product by clicking 'search' button!
-* Show all product by clicking 'all' button!
+* Search the product by clicking 'SEARCH' button!
+* Show all product by clicking 'ALL' button!
 ![alt text](https://github.com/jamesdai0717/defect_detection/blob/main/check_web/images/search1.png?raw=true)
